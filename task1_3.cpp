@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    float eded;
-    cin >> eded; 
-    cout << "Kvadrati: " << eded * eded << endl;
-    cout << "Kubu: " << eded * eded * eded << endl;
+    float n;
+    cin >> n; 
+    cout << "Kvadrat: " << n * n << endl;
+    cout << "Kub: " << n * n * n << endl;
 }
