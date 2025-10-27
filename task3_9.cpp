@@ -1,19 +1,18 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-
 int main() {
-    int n;
-    cin >> n;
-    bool s = true;
-    for (int i = 2; i < n; i++) {
-        if (n % i == 0) {
-            s = false;
-            break;
+    int n, c=0;
+    cin>>n;
+    for(int i=2;i<n;++i){
+        if (n%i==0){
+            c+=1;
+            }
         }
-    }
-    if (n < 2) s = false;
-    if (s == true)
-        cout << "Sadədi";
-    else
-        cout << "Sadə deyil";
+    if (c==0){
+        cout<<"sadədir";
+        }
+    else{
+        cout<<"mürəkkəbdir";
+        }
 }
