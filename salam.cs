@@ -92,23 +92,23 @@ class Program
 {
     static void Main()
     {
-        VerilenlerBazasi db = new VerilenlerBazasi();
+        databaza db = new databaza();
 
-        Xeste x1 = new Xeste(1, "Zaman", 27, "1-");
-        Xeste x2 = new Xeste(2, "Cefer", 23, "2+");
-        Xeste x3 = new Xeste(3, "Farid", 21, "4-");
+        Xeste x1 = new Xeste(1, "Elcan", 17, "1-");
+        Xeste x2 = new Xeste(2, "Əli", 19, "2+");
+        Xeste x3 = new Xeste(3, "Bəhməz", 18, "4-");
 
-        Hekim h1 = new Hekim(1, "Dr. Ali", 45, "Kardiologiya");
-        Hekim h2 = new Hekim(2, "Dr. Veli", 50, "Nevrologiya");
+        Hekim h1 = new Hekim(1, "Dr. Heybətqulu", 45, "Kardiologiya");
+        Hekim h2 = new Hekim(2, "Dr. Abdulhamid", 50, "Nevrologiya");
 
-        db.XesteElaveEt(x1);
-        db.XesteElaveEt(x2);
-        db.XesteElaveEt(x3);
+        db.Xesteelaveet(x1);
+        db.Xesteelaveet(x2);
+        db.Xesteelaveet(x3);
 
-        db.HekimElaveEt(h1);
-        db.HekimElaveEt(h2);
+        db.hekimelaveet(h1);
+        db.hekimelaveet(h2);
 
-        db.HamisiniGoster();
+        db.hamisinigoster();
 
         Console.WriteLine("Ümumi xəstə sayı: " + Xeste.GetTotalPatients());
     }
