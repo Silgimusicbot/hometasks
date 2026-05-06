@@ -28,12 +28,12 @@ class Xeste : Adam
         umumixestesayi++;
     }
 
-    public string GetRecord()
+    public string capettezol()
     {
         return "Xəstə ID: " + id + ", Ad: " + tamad + ", Yaş: " + yas + ", Qan qrupu: " + qanqrupu;
     }
 
-    public static int GetTotalPatients()
+    public static int butovxeste()
     {
         return umumixestesayi;
     }
@@ -50,7 +50,7 @@ class Hekim : Adam
         this.ixtisas = ixtisas;
     }
 
-    public string GetInfo()
+    public string sexsiyyet()
     {
         return "Həkim ID: " + id + ", Ad: " + tamad + ", Yaş: " + yas + ", İxtisas: " + ixtisas;
     }
@@ -77,13 +77,13 @@ class databaza
         Console.WriteLine("Xəstələr");
         foreach (var x in xesteler)
         {
-            Console.WriteLine(x.GetRecord());
+            Console.WriteLine(x.capettezol());
         }
 
         Console.WriteLine("Həkimlər");
         foreach (var h in hekimler)
         {
-            Console.WriteLine(h.GetInfo());
+            Console.WriteLine(h.sexsiyyet());
         }
     }
 }
@@ -110,6 +110,6 @@ class Program
 
         db.hamisinigoster();
 
-        Console.WriteLine("Ümumi xəstə sayı: " + Xeste.GetTotalPatients());
+        Console.WriteLine("Ümumi xəstə sayı: " + Xeste.butovxeste());
     }
 }
