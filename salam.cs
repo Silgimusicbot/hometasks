@@ -8,7 +8,7 @@ class Adam
     protected string tamad;
     protected int yas;
 
-    public Sexs(int id, string ad, int yas)
+    public Adam(int id, string ad, int yas)
     {
         this.id = id;
         this.tamad = ad;
